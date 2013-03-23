@@ -1,11 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'jash/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "jash"
-  spec.version       = Jash::VERSION
+  spec.version       = "0.01"
   spec.authors       = ["Jingjing Duan"]
   spec.email         = ["jingjing.duan@hulu.com"]
   spec.description   = %q{TODO: Write a gem description}
