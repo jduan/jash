@@ -6,10 +6,10 @@ Gem::Specification.new do |spec|
   spec.name          = "jash"
   spec.version       = "0.01"
   spec.authors       = ["Jingjing Duan"]
-  spec.email         = ["jingjing.duan@hulu.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.email         = ["duanjingjing@gmail.com"]
+  spec.description   = %q{Use hash like a JSON object}
+  spec.summary       = %q{Use hash like a JSON object}
+  spec.homepage      = "https://github.com/jduan/jash"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

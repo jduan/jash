@@ -1,6 +1,6 @@
 # Jash
 
-TODO: Write a gem description
+Jash allows you to use a hash object like a JSON object via "dot" syntax.
 
 ## Installation
 
@@ -17,8 +17,37 @@ Or install it yourself as:
     $ gem install jash
 
 ## Usage
+Example:
 
-TODO: Write usage instructions here
+```ruby
+    h = {
+      name: "John",
+      items: [1,2,3],
+      address: {
+        state: "WA",
+        city: "Seattle",
+        zip: "98103",
+        location: {
+          lattitude: 47.6,
+          longituide: 122.3,
+        }
+      }
+    }
+
+    j = Jash.new(h)
+
+    j.address = {
+      state: "MA",
+      city: "Boston",
+      location: {
+        lattitude: 42.4,
+        longituide: 71.1,
+      }
+    }
+    j.address.state.should == "MA"
+    j.address.city.should == "Boston"
+    j.address.location.lattitude == 42.4
+```
 
 ## Contributing
 
