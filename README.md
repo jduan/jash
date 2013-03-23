@@ -36,6 +36,10 @@ Example:
 
     j = Jash.new(h)
 
+    j.name                # "John"
+    j.address.state       # "WA"
+    j.location.longituide # 122.3
+
     j.address = {
       state: "MA",
       city: "Boston",
@@ -44,9 +48,9 @@ Example:
         longituide: 71.1,
       }
     }
-    j.address.state.should == "MA"
-    j.address.city.should == "Boston"
-    j.address.location.lattitude == 42.4
+    j.address.state              # "MA"
+    j.address.city               # "Boston"
+    j.address.location.lattitude # 42.4
 ```
 
 ## Contributing

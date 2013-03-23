@@ -41,6 +41,10 @@ describe Jash do
 
     j = Jash.new(h)
 
+    j.name.should == "John"
+    j.address.state.should == "WA"
+    j.location.longituide.should == 122.3
+
     j.address = {
       state: "MA",
       city: "Boston",
@@ -51,6 +55,6 @@ describe Jash do
     }
     j.address.state.should == "MA"
     j.address.city.should == "Boston"
-    j.address.location.lattitude == 42.4
+    j.address.location.lattitude.should == 42.4
   end
 end
